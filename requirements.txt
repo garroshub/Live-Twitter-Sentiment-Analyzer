@@ -1,0 +1,4 @@
+pandas==1.3.4
+streamlit==1.12.0
+transformers==4.22.2
+tweepy==4.4.0
