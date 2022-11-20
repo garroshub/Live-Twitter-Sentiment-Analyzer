@@ -18,7 +18,7 @@ api = tw.API(auth, wait_on_rate_limit=True)
 
 classifier = pipeline('sentiment-analysis')
 
-st.title('Live Twitter Sentiment Analyzer')
+st.title('Live Twitter Sentiment Analysis')
 st.markdown('Get the sentiment labels of live tweets!')
 
 def run():
