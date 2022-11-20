@@ -16,7 +16,7 @@ auth = tw.OAuthHandler(api_key, api_key_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tw.API(auth, wait_on_rate_limit=True)
 
-classifier = pipeline('sentiment-analysis')
+classifier = pipeline('sentiment-analysis',model = "finiteautomata/bertweet-base-sentiment-analysis")
 
 st.title('Live Twitter Sentiment Analysis')
 st.markdown('Get the sentiment labels of live tweets!')
